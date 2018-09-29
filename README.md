@@ -6,7 +6,7 @@ FFMPEG Cheatsheet.
 
 ## Table of Contents
 
-* [Why ImageMagick](#why-FFMPEG)
+* [Why ImageMagick](#why-ffmpeg)
 * [Prerequisites](#prerequisites)
 * [Installation](#installation)
 * [Best Practices](#cheatsheet)
