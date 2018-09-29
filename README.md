@@ -1,0 +1,2 @@
+# ffmpeg-cheatsheet
+FFMPEG Cheatsheet.
