@@ -28,7 +28,7 @@ https://ffmpeg.org/documentation.html
 
 ### Video format
 
-mp4,avi,mpeg,rtmp
+mp4,avi,mpeg...
 
 ### Video Processing
 
