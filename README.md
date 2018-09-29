@@ -65,6 +65,7 @@ https://ffmpeg.org/download.html#build-windows
 
 #### Overview
 
+```
  _______              ______________
 |       |            |              |
 | input |  demuxer   | encoded data |   decoder
@@ -82,6 +83,7 @@ https://ffmpeg.org/download.html#build-windows
 | file   |   muxer   | packets      |   encoder
 |________|           |______________|
 
+```
 
 ### Cheatsheet
 
