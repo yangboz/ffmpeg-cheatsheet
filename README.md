@@ -4,8 +4,6 @@ FFMPEG Cheatsheet.
 
 **Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
 
-**Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
-
 ## Table of Contents
 
 * [Why ImageMagick](#why-FFMPEG)
