@@ -135,6 +135,12 @@ ffmpeg -i input.mp4   -filter:v "setpts=0.5*PTS" -filter:a "atempo=2" outputX2.m
 ffmpeg -i input.mp4   -filter:v "setpts=0.25*PTS" -filter:a "atempo=2, atempo=2" outputX4.mp4 
 ```
 
+#### split video into X minutes chunks
+
+```
+ ffmpeg -i source-file.foo -ss 0 -t 600 first-10-min.m4v
+```
+
 #### Background Transparent
 
 
@@ -157,20 +163,6 @@ Click [README.md](https://github.com/wsargent/docker-cheat-sheet/blob/master/REA
 ![Change This](images/change.png)
 
 ![Commit](images/commit.png)
-
-### FFMPEG
-
-fasten video and video
-
-2X
-```
-ffmpeg -i input.mp4   -filter:v "setpts=0.5*PTS" -filter:a "atempo=2" outputX2.mp4 
-```
-
-4X
-```
-ffmpeg -i input.mp4   -filter:v "setpts=0.25*PTS" -filter:a "atempo=2, atempo=2" outputX4.mp4 
-```
 
 ### Tools
 
