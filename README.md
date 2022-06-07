@@ -99,6 +99,12 @@ ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_op
 ffmpeg -i input.mp4 output.avi
 ```
 
+####  webm to mp4:
+
+```
+ffmpeg -i movie.webm movie.mp4
+```
+
 #### Resize:
 
 ```
@@ -171,3 +177,5 @@ Click [README.md](https://github.com/wsargent/docker-cheat-sheet/blob/master/REA
 https://ffmpeg.org/ffmpeg.html
 
 https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md
+
+https://stackoverflow.com/questions/18123376/webm-to-mp4-conversion-using-ffmpeg
