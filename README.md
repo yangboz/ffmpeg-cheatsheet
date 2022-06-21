@@ -28,7 +28,7 @@ https://ffmpeg.org/documentation.html
 
 ### Video format
 
-mp4,avi,mpeg...
+mp4,avi,mpeg,flv...
 
 ### Video Processing
 
@@ -124,6 +124,7 @@ ffmpeg -i video.mpg image-%04d.jpg
 #### Rotate 90
 
 #### Flip
+
 
 #### Flop
 
