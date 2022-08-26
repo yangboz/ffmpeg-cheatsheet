@@ -99,6 +99,12 @@ ffmpeg [global_options] {[input_file_options] -i input_url} ... {[output_file_op
 ffmpeg -i input.mp4 output.avi
 ```
 
+####  gif to mp4:
+
+```
+ffmpeg -i animated.gif -movflags faststart -pix_fmt yuv420p -vf "scale=trunc(iw/2)*2:trunc(ih/2)*2" video.mp4
+```
+
 ####  webm to mp4:
 
 ```
@@ -149,6 +155,7 @@ ffmpeg -i input.mp4   -filter:v "setpts=0.25*PTS" -filter:a "atempo=2, atempo=2"
 ```
 
 #### Background Transparent
+
 
 
 ## Contributing
