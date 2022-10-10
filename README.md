@@ -127,6 +127,11 @@ ffmpeg -framerate 30 -pattern_type glob -i '*.png' \
   -c:v libx264 -pix_fmt yuv420p out.mp4
 ```
 
+#### Specifying start and end frames
+```
+ffmpeg -r 60 -f image2 -s 1920x1080 -start_number 1 -i pic%04d.png -vframes 1000 -vcodec libx264 -crf 25  -pix_fmt yuv420p output.mp4
+```
+
 #### GrayScale
 
 
