@@ -121,6 +121,11 @@ ffmpeg -i movie.webm movie.mp4
 ```
 ffmpeg -i video.mpg image-%04d.jpg 
 ```
+#### pngs to video
+```
+ffmpeg -framerate 30 -pattern_type glob -i '*.png' \
+  -c:v libx264 -pix_fmt yuv420p out.mp4
+```
 
 #### GrayScale
 
