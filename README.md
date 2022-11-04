@@ -126,6 +126,8 @@ ffmpeg -i video.mpg image-%04d.jpg
 ffmpeg -framerate 30 -pattern_type glob -i '*.png' \
   -c:v libx264 -pix_fmt yuv420p out.mp4
 ```
+@more:https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg
+
 
 #### Specifying start and end frames
 ```
