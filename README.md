@@ -194,6 +194,8 @@ Click [README.md](https://github.com/wsargent/docker-cheat-sheet/blob/master/REA
 
 ## References
 
+https://github.com/yangboz/imagemagick-cheatsheet
+
 https://ffmpeg.org/ffmpeg.html
 
 https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md
