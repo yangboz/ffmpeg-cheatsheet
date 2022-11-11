@@ -198,6 +198,8 @@ https://github.com/yangboz/imagemagick-cheatsheet
 
 https://ffmpeg.org/ffmpeg.html
 
+https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence
+
 https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md
 
 https://stackoverflow.com/questions/18123376/webm-to-mp4-conversion-using-ffmpeg
