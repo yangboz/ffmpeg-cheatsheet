@@ -126,7 +126,12 @@ ffmpeg -i video.mpg image-%04d.jpg
 ffmpeg -framerate 30 -pattern_type glob -i '*.png' \
   -c:v libx264 -pix_fmt yuv420p out.mp4
 ```
-@more:https://stackoverflow.com/questions/24961127/how-to-create-a-video-from-images-with-ffmpeg
+
+#### take snapshot of video
+
+```
+ffmpeg -i VID_20200720_092249.mp4 -y -f image2 -ss 08.010 -t 0.001 -s 352x240 b.jpg
+```
 
 
 #### Specifying start and end frames
