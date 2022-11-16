@@ -208,3 +208,7 @@ https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence
 https://github.com/gradywoodruff/cheatsheet/blob/master/ffmpeg.md
 
 https://stackoverflow.com/questions/18123376/webm-to-mp4-conversion-using-ffmpeg
+
+### known issues
+
+https://stackoverflow.com/questions/20847674/ffmpeg-libx264-height-not-divisible-by-2
