@@ -139,6 +139,15 @@ ffmpeg -i VID_20200720_092249.mp4 -y -f image2 -ss 08.010 -t 0.001 -s 352x240 b.
 ffmpeg -r 60 -f image2 -s 1920x1080 -start_number 1 -i pic%04d.png -vframes 1000 -vcodec libx264 -crf 25  -pix_fmt yuv420p output.mp4
 ```
 
+
+### jpgs to video with video filter
+
+```
+ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
+  -c:v libx264 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2"  -pix_fmt yuv420p out609cfbgs.mp4
+
+```
+
 #### GrayScale
 
 
