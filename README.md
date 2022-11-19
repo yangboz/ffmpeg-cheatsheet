@@ -146,7 +146,15 @@ ffmpeg -r 60 -f image2 -s 1920x1080 -start_number 1 -i pic%04d.png -vframes 1000
 ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
   -c:v libx264 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2"  -pix_fmt yuv420p out609cfbgs.mp4
 
+``` 
+
+#### drawtext filter
+
 ```
+ -vf "drawtext=text=string1 string2 string3 string4 string5 string6 string7 :expansion=normal:fontfile=foo.ttf: y=h-line_h-10:x=(mod(5*n\,w+tw)-tw): fontcolor=white: fontsize=40: shadowx=2: shadowy=2"
+```
+
+@more: https://superuser.com/questions/875058/loop-text-that-wipes-left-to-right-using-ffmpeg-drawtext-filter/1026470#1026470
 
 #### GrayScale
 
