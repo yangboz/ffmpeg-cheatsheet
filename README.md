@@ -165,6 +165,16 @@ ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
 ffmpeg -i audio.mp3 -i input.mp4 -filter_complex "[0:a][1:a]amerge,pan=stereo|c0<c0+c2|c1<c1+c3[out]" -map 1:v -map "[out]" -c:v copy -shortest output.mp4
 
 ``` 
+#### LOOP AUDIO TO THE LENGTH OF VIDEO
+
+```
+ffmpeg \
+    -i video1.mp4 -stream_loop -1 -i audio2.mp3 \
+    -c:v copy \
+    -shortest \
+    -map 0:v -map 1:a \
+    -y output.mp4
+```
 
 
 ### add loop background music to image
