@@ -1,5 +1,7 @@
 # ffmpeg-cheatsheet
 
+for single image, please check:https://github.com/yangboz/imagemagick-cheatsheet
+
 FFMPEG Cheatsheet.
 
 **Want to improve this cheat sheet?  See the [Contributing](#contributing) section!**
