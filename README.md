@@ -150,6 +150,14 @@ ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
 
 ``` 
 
+### add background music 
+
+```
+ffmpeg -i audio.mp3 -i input.mp4 -filter_complex "[0:a][1:a]amerge,pan=stereo|c0<c0+c2|c1<c1+c3[out]" -map 1:v -map "[out]" -c:v copy -shortest output.mp4
+
+``` 
+
+
 #### drawtext filter
 
 ```
