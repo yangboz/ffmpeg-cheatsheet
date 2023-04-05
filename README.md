@@ -150,6 +150,15 @@ ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
 
 ``` 
 
+
+### jpgs to video with video filter
+
+```
+ffmpeg -framerate 10 -pattern_type glob -i '*.jpg' \
+  -c:v libx264 -vf "pad=ceil(iw/2)*2:ceil(ih/2)*2"  -pix_fmt yuv420p out609cfbgs.mp4
+
+``` 
+
 ### add background music 
 
 ```
@@ -157,6 +166,16 @@ ffmpeg -i audio.mp3 -i input.mp4 -filter_complex "[0:a][1:a]amerge,pan=stereo|c0
 
 ``` 
 
+
+### add loop background music to image
+
+
+```
+ffmpeg -loop 1 -i image.jpg -i background-music.mp3 \-c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p \-t 5 out-image.mp4
+
+``` 
+
+``` 
 
 #### drawtext filter
 
