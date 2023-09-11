@@ -230,7 +230,11 @@ ffmpeg -i input.mp4   -filter:v "setpts=0.25*PTS" -filter:a "atempo=2, atempo=2"
 #### Background Transparent
 
 
+#### wav to mp3
 
+```
+ffmpeg -i input-file.wav -vn -ar 44100 -ac 2 -b:a 192k output-file.mp3
+```
 ## Contributing
 
 Here's how to contribute to this cheat sheet.
