@@ -235,6 +235,12 @@ ffmpeg -i input.mp4   -filter:v "setpts=0.25*PTS" -filter:a "atempo=2, atempo=2"
 ```
 ffmpeg -i input-file.wav -vn -ar 44100 -ac 2 -b:a 192k output-file.mp3
 ```
+
+
+#### HLS to mp4
+```
+ffmpeg -i http://.../playlist.m3u8 -c copy -bsf:a aac_adtstoasc output.mp4
+```
 ## Contributing
 
 Here's how to contribute to this cheat sheet.
