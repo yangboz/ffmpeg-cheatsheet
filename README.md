@@ -177,8 +177,7 @@ ffmpeg \
 ```
 
 
-### add loop background music to image
-
+#### add loop background music to image
 
 ```
 ffmpeg -loop 1 -i image.jpg -i background-music.mp3 \-c:v libx264 -tune stillimage -c:a aac -b:a 192k -pix_fmt yuv420p \-t 5 out-image.mp4
@@ -237,7 +236,7 @@ ffmpeg -i input-file.wav -vn -ar 44100 -ac 2 -b:a 192k output-file.mp3
 ```
 
 
-#### HLS to mp4
+####  HLS to mp4
 ```
 ffmpeg -i http://.../playlist.m3u8 -c copy -bsf:a aac_adtstoasc output.mp4
 ```
